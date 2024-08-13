@@ -11,12 +11,12 @@ const authMiddleware = require("./middleware/auth")
 const cors= require("cors")
 
 app.use(cors({
-  origin: "http://localhost:5000",
+  origin: "http://localhost:3000",
   Credentials:true
 }))
 app.use(bodyParser.json());
 app.use(express.json());
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 //MIDDLEWARES
 //log every incomung request
